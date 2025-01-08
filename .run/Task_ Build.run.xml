@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false"
+    name="Task: Build"
+    type="DenoConfigurationType"
+    inputPath="$PROJECT_DIR$/main.ts"
+    programParameters="run --allow-all">
+
+    <option name="applicationArguments" value="build" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Task: Debug"
+    type="DenoConfigurationType"
+    inputPath="$PROJECT_DIR$/main.ts"
+    programParameters="run --unstable --inspect-wait --allow-all">
+
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true"
+        run_configuration_name="Task: Build"
+        run_configuration_type="DenoConfigurationType" />
+    </method>
+  </configuration>
+</component>
