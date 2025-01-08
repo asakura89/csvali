@@ -250,7 +250,12 @@ export class Parser {
                 continue;
             }
 
-            switch (this.CurrentTokenType) {
+            /**
+                NOTE:
+                - https://github.com/microsoft/TypeScript/issues/52407
+                - https://stackoverflow.com/questions/55018730/error-ts2678-type-string-is-not-comparable-to-type-in-angular-5
+            */
+            switch (this.CurrentTokenType as TokenType) {
                 case TokenType.Delimiter:
                 case TokenType.LineSeparator:
                 case TokenType.EndOfFile:
@@ -488,11 +493,11 @@ console.table(
 );
 */
 
-const filePath: string = "C:/Users/dita.subrata/Downloads/(Original copy from user) Data on Housing and Bridging Loans_Sample.csv";
+const filePath: string = "C:/Users/ASMNetworkLabUsr/Downloads/Original_Sample.csv";
 readCsvAndParse(filePath)
     .then(console.table);
 
-const filePath2: string = "C:/Users/dita.subrata/Downloads/(Modified) Data on Housing and Bridging Loans_Sample.csv";
+const filePath2: string = "C:/Users/ASMNetworkLabUsr/Downloads/Mixed_Sample.csv";
 readCsvAndParse(filePath2)
     .then(console.table);
 
